@@ -9,7 +9,7 @@ node {
 
  }
      stage("Index file"){
-         sh "scp index.html ec2-user${ENV}:/tmp"
+         sh "scp index.html ec2-user@${ENV}:/tmp"
 
 
       
