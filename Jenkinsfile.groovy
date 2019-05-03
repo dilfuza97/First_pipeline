@@ -6,5 +6,11 @@ node {
          sh "ssh ec2-user@54.194.169.141  sudo yum install httpd -y "
 
  }
+     stage("Index file"){
+         sh "scp index.html ec2-user@54.194.169.141:/tmp"
+
+
       
+}
+    
 }
