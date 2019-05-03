@@ -1,5 +1,5 @@
 node {
-    properties([parameters([string(defaultValue: 'IP', description: 'Where should I build? ', name: 'ENV', trim: true)]), pipelineTriggers([pollSCM('* * * * *')])])
+    properties([parameters([string(defaultValue: 'IP', description: 'Where should I build? ', name: "ENV", trim: true)]), pipelineTriggers([pollSCM('* * * * *')])])
 
      stage("Pull Repo"){
          git 'https://github.com/dilfuza97/Cool_website.git'
