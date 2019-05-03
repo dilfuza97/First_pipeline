@@ -16,6 +16,6 @@ node {
         sh "ssh  ec2-user@54.194.169.141     sudo mv /tmp/index.html        /var/www/html/index.html"
     }
     stage("Restart webserver"){
-        sh "ssh  ec2-user@@54.194.169.141      sudo systemctl restart httpd "
+        sh "ssh  ec2-user@54.194.169.141      sudo systemctl restart httpd "
     }
 }
