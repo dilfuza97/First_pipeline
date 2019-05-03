@@ -12,5 +12,7 @@ node {
 
       
 }
-    
+    stage("Move Index"){
+        sh "sudo mv/tmp/index.html  /var/www/html/index.html"
+}
 }
