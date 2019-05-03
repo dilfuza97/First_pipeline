@@ -13,6 +13,6 @@ node {
       
 }
     stage("Move Index"){
-        sh " ssh ec2-user@54.194.169.141  sudo mv/tmp/index.html  /var/www/html/index.html"
+        sh "ssh ec2-user@54.194.169.141  sudo mv/tmp/index.html  /var/www/html/index.html"
 }
 }
